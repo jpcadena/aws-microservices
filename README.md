@@ -249,7 +249,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[project-screenshot]: assets/images/project.png
+[project-screenshot]: static/images/project.png
 [python-docs]: https://docs.python.org/3.11/
 
 [linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
