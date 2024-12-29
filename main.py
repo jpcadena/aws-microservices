@@ -2,6 +2,7 @@
 Main script for aws-microservices project
 """
 
+
 def main() -> None:
     """
     Main method
