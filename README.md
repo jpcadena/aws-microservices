@@ -16,10 +16,10 @@
     <img src="static/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Aws microservices</h3>
+<h3 align="center">Aws Microservices</h3>
 
   <p align="center">
-    Aws microservices
+    Amazon Web Services as Microservices
     <br />
     <a href="https://github.com/jpcadena/aws-microservices"><strong>Explore the docs »</strong></a>
     <br />
