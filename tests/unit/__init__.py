@@ -1,4 +1,3 @@
-  """
+"""
 Package tests.unit initialization.
 """
-

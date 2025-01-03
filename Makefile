@@ -1,7 +1,6 @@
 lint:
 	-codespell
-	-isort .
-	-black .
+	-ruff clean
 	-ruff check . --fix
 	-ruff format .
 	-mypy --pretty .
