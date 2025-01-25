@@ -11,28 +11,28 @@ maintainers = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "awscli>=1.36.33",
-    "boto3>=1.35.92",
-    "boto3-stubs>=1.35.92",
+    "awscli>=1.37.6",
+    "boto3>=1.36.6",
+    "boto3-stubs>=1.35.6",
     "email-validator>=2.2.0",
-    "fastapi>=0.115.6",
-    "pydantic>=2.10.4",
-    "pydantic-extra-types>=2.10.1",
+    "fastapi>=0.115.7",
+    "pydantic>=2.10.6",
+    "pydantic-extra-types>=2.10.2",
     "pydantic-settings>=2.7.1",
     "python-dotenv>=1.0.1",
-    "starlette>=0.41.3",
+    "starlette>=0.45.3",
     "uvicorn>=0.34.0",
 ]
 
 [dependency-groups]
 dev = [
-    "bandit>=1.8.0",
+    "bandit>=1.8.2",
     "black>=24.10.0",
-    "codespell>=2.3.0",
+    "codespell>=2.4.0",
     "isort>=5.13.2",
     "mypy>=1.14.1",
-    "pre-commit>=4.0.1",
-    "ruff>=0.8.5",
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.3",
 ]
 test = [
     "coverage>=7.6.10",
