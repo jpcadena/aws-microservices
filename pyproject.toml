@@ -11,11 +11,11 @@ maintainers = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "awscli>=1.37.6",
-    "boto3>=1.36.6",
-    "boto3-stubs>=1.35.6",
+    "awscli>=1.37.10",
+    "boto3>=1.36.10",
+    "boto3-stubs>=1.35.10",
     "email-validator>=2.2.0",
-    "fastapi>=0.115.7",
+    "fastapi>=0.115.8",
     "pydantic>=2.10.6",
     "pydantic-extra-types>=2.10.2",
     "pydantic-settings>=2.7.1",
@@ -27,17 +27,17 @@ dependencies = [
 [dependency-groups]
 dev = [
     "bandit>=1.8.2",
-    "black>=24.10.0",
-    "codespell>=2.4.0",
+    "black>=25.1.0",
+    "codespell>=2.4.1",
     "isort>=5.13.2",
     "mypy>=1.14.1",
     "pre-commit>=4.1.0",
-    "ruff>=0.9.3",
+    "ruff>=0.9.4",
 ]
 test = [
     "coverage>=7.6.10",
     "pytest>=8.3.4",
-    "pytest-asyncio>=0.25.1",
+    "pytest-asyncio>=0.25.3",
     "pytest-cov>=6.0.0",
     "pytest-mock>=3.14.0",
 ]
