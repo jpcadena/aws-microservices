@@ -73,7 +73,7 @@ maintainability of the overall solution.
 This backend project is about Aws microservices and is built using a suite of
 modern, powerful technologies and frameworks to ensure high performance, ease of development, and robustness:
 
-[![Python][python-shield]][python-url] [![FastAPI][fastapi-shield]][fastapi-url] [![Pydantic][pydantic-shield]][pydantic-url] [![Starlette][starlette-shield]][starlette-url] [![Uvicorn][uvicorn-shield]][uvicorn-url] [![isort][isort-shield]][isort-url] [![Black][black-shield]][black-url] [![Ruff][ruff-shield]][ruff-url] [![MyPy][mypy-shield]][mypy-url] [![pre-commit][pre-commit-shield]][pre-commit-url] [![GitHub Actions][github-actions-shield]][github-actions-url] [![Poetry][poetry-shield]][poetry-url] [![Pycharm][pycharm-shield]][pycharm-url] [![Visual Studio Code][visual-studio-code-shield]][visual-studio-code-url] [![Markdown][markdown-shield]][markdown-url] [![Swagger UI][swagger-ui-shield]][swagger-ui-url] [![License: MIT][license-shield]][license-url]
+[![Python][python-shield]][python-url] [![AWS][aws-shield]][aws-url] [![FastAPI][fastapi-shield]][fastapi-url] [![Pydantic][pydantic-shield]][pydantic-url] [![Starlette][starlette-shield]][starlette-url] [![Uvicorn][uvicorn-shield]][uvicorn-url] [![Pytest][pytest-shield]][pytest-url] [![isort][isort-shield]][isort-url] [![Black][black-shield]][black-url] [![Ruff][ruff-shield]][ruff-url] [![MyPy][mypy-shield]][mypy-url] [![pre-commit][pre-commit-shield]][pre-commit-url] [![GitHub Actions][github-actions-shield]][github-actions-url] [![Pycharm][pycharm-shield]][pycharm-url] [![Visual Studio Code][visual-studio-code-shield]][visual-studio-code-url] [![Markdown][markdown-shield]][markdown-url] [![Swagger UI][swagger-ui-shield]][swagger-ui-url] [![License: MIT][license-shield]][license-url]
 
 The system is composed of the following main components, each playing a
 crucial role in providing a scalable, maintainable, and robust application:
@@ -267,15 +267,16 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 [black-shield]: https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge&logo=appveyor
 [mypy-shield]: https://img.shields.io/badge/mypy-checked-2A6DB2.svg?style=for-the-badge&logo=appveyor
 [visual-studio-code-shield]: https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white
-[poetry-shield]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/python-poetry/website/main/static/badge/v0.json
 [isort-shield]: https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336
 [github-actions-shield]: https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white
 [pre-commit-shield]: https://img.shields.io/badge/pre--commit-F7B93E?style=for-the-badge&logo=pre-commit&logoColor=white
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [uv-shield]: https://img.shields.io/badge/uv-toolkit-blue?logo=uv&style=flat-square
+[pytest-shield]: https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white
+[aws-shield]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
 
 [linkedin-url]: https://linkedin.com/in/juanpablocadenaaguilar
-[python-url]: https://docs.python.org/3.11/
+[python-url]: https://www.python.org/
 [fastapi-url]: https://fastapi.tiangolo.com
 [pydantic-url]: https://docs.pydantic.dev
 [starlette-url]: https://www.starlette.io/
@@ -288,9 +289,10 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 [black-url]: https://github.com/psf/black
 [mypy-url]: http://mypy-lang.org/
 [visual-studio-code-url]: https://code.visualstudio.com/
-[poetry-url]: https://python-poetry.org/
 [isort-url]: https://pycqa.github.io/isort/
 [github-actions-url]: https://github.com/features/actions
 [pre-commit-url]: https://pre-commit.com/
 [license-url]: https://opensource.org/licenses/MIT
 [uv-url]: https://docs.astral.sh/uv/getting-started/installation/
+[pytest-url]: https://docs.pytest.org/
+[aws-url]: https://aws.amazon.com/

@@ -6,6 +6,7 @@ lint:
 	-mypy --pretty .
 update:
 	-uv lock --upgrade
+	-uv sync
 	-pre-commit autoupdate
 sec:
 	-safety scan --apply-fixes

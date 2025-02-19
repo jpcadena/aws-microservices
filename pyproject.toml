@@ -4,16 +4,16 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-      {name = "Juan Pablo Cadena Aguilar", email = "jpcadena@espol.edu.ec"},
+    { name = "Juan Pablo Cadena Aguilar", email = "jpcadena@espol.edu.ec" },
 ]
 maintainers = [
-      {name = "Juan Pablo Cadena Aguilar", email = "jpcadena@espol.edu.ec"},
+    { name = "Juan Pablo Cadena Aguilar", email = "jpcadena@espol.edu.ec" },
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "awscli>=1.37.10",
-    "boto3>=1.36.10",
-    "boto3-stubs>=1.35.10",
+    "awscli>=1.37.23",
+    "boto3>=1.36.23",
+    "boto3-stubs>=1.36.23",
     "email-validator>=2.2.0",
     "fastapi>=0.115.8",
     "pydantic>=2.10.6",
@@ -26,16 +26,16 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "bandit>=1.8.2",
+    "bandit>=1.8.3",
     "black>=25.1.0",
     "codespell>=2.4.1",
     "isort>=5.13.2",
-    "mypy>=1.14.1",
+    "mypy>=1.15.0",
     "pre-commit>=4.1.0",
-    "ruff>=0.9.4",
+    "ruff>=0.9.6",
 ]
 test = [
-    "coverage>=7.6.10",
+    "coverage>=7.6.12",
     "pytest>=8.3.4",
     "pytest-asyncio>=0.25.3",
     "pytest-cov>=6.0.0",
@@ -94,9 +94,16 @@ warn_required_dynamic_aliases = true
 warn_untyped_fields = true
 
 [tool.bandit]
-exclude_dirs = ["venv/*", ".mypy_cache/*", ".pytest_cache/*", ".ruff_cache/*", ".venv/*", "tests/*", ]
+exclude_dirs = [
+    "venv/*",
+    ".mypy_cache/*",
+    ".pytest_cache/*",
+    ".ruff_cache/*",
+    ".venv/*",
+    "tests/*",
+]
 tests = ["B301"]
-skips = ["B101", "B601", "B201", ]
+skips = ["B101", "B601", "B201"]
 
 [tool.ruff]
 target-version = "py313"
@@ -147,22 +154,22 @@ indent-style = "tab"
 
 [tool.ruff.lint]
 select = [
-    "E",  # pycodestyle errors
-    "W",  # pycodestyle warnings
-    "F",  # pyflakes
-    "I",  # isort
-    "B",  # flake8-bugbear
-    "C4",  # flake8-comprehensions
-    "UP",  # pyupgrade
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
     "ARG001", # unused arguments in functions
 ]
 ignore = [
-    "E501",  # line too long, handled by black
-    "B008",  # do not perform function calls in argument defaults
-    "W191",  # indentation contains tabs
-    "B904",  # Allow raising exceptions without from e, for HTTPException
+    "E501", # line too long, handled by black
+    "B008", # do not perform function calls in argument defaults
+    "W191", # indentation contains tabs
+    "B904", # Allow raising exceptions without from e, for HTTPException
 ]
-exclude = ["venv", ".venv", ".mypy_cache", ".ruff_cache", ".pytest_cache", ]
+exclude = ["venv", ".venv", ".mypy_cache", ".ruff_cache", ".pytest_cache"]
 
 [tool.ruff.lint.flake8-unused-arguments]
 ignore-variadic-names = true
@@ -177,16 +184,14 @@ max-complexity = 10
 
 [tool.ruff.lint.pep8-naming]
 # Allow Pydantic's `@validator` decorator to trigger class method treatment.
-classmethod-decorators = [
-    "pydantic.validator"
-]
+classmethod-decorators = ["pydantic.validator"]
 
 [tool.ruff.lint.pydocstyle]
-convention = "pep257"  # google, numpy
+convention = "pep257"                   # google, numpy
 ignore-decorators = ["typing.overload"]
 
 [tool.ruff.lint.pylint]
-allow-dunder-method-names = ["__tablename__", "__table_args__"]  # PLW3201
+allow-dunder-method-names = ["__tablename__", "__table_args__"] # PLW3201
 max-args = 5
 max-bool-expr = 4
 max-returns = 5
@@ -197,12 +202,12 @@ keep-runtime-typing = true
 
 [tool.pytest.ini_options]
 addopts = [
-    "-rxXs", # Display extra info for test failures
-    "--strict-config", # Enforce strict pytest configuration
-    "--strict-markers", # Enforce strict markers
-    "--ignore=docs_src", # Ignore the 'docs_src' directory
+    "-rxXs",                   # Display extra info for test failures
+    "--strict-config",         # Enforce strict pytest configuration
+    "--strict-markers",        # Enforce strict markers
+    "--ignore=docs_src",       # Ignore the 'docs_src' directory
     "--cov=aws-microservices",
-    "--durations=10"
+    "--durations=10",
 ]
 filterwarnings = [
     "error",
@@ -273,10 +278,7 @@ omit = [
     "venv/*",
 ]
 parallel = true
-source = [
-    "tests",
-    "."
-]
+source = ["tests", "."]
 relative_files = true
 
 [tool.coverage.report]
@@ -289,7 +291,7 @@ exclude_lines = [
     "if 0:",
     "if TYPE_CHECKING:",
     "@typing.overload",
-    "if __name__ == .__main__.:"
+    "if __name__ == .__main__.:",
 ]
 fail_under = 90.0
 ignore_errors = true
@@ -302,6 +304,4 @@ sort = "-Cover"
 show_contexts = true
 
 [tool.coverage.paths]
-source = [
-    "."
-]
+source = ["."]
