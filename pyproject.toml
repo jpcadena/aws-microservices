@@ -11,41 +11,49 @@ maintainers = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "awscli>=1.37.23",
-    "boto3>=1.36.23",
-    "boto3-stubs>=1.36.23",
-    "email-validator>=2.2.0",
-    "fastapi>=0.115.8",
-    "pydantic>=2.10.6",
-    "pydantic-extra-types>=2.10.2",
-    "pydantic-settings>=2.7.1",
-    "python-dotenv>=1.0.1",
-    "starlette>=0.45.3",
-    "uvicorn>=0.34.0",
+    "awscli>=1.42.55",
+    "boto3>=1.40.55",
+    "boto3-stubs>=1.40.55",
+    "email-validator>=2.3.0",
+    "fastapi>=0.119.0",
+    "pydantic>=2.12.3",
+    "pydantic-extra-types>=2.10.6",
+    "pydantic-settings>=2.11.0",
+    "python-dotenv>=1.1.1",
+    "starlette>=0.48.0",
+    "uvicorn>=0.38.0",
 ]
 
 [dependency-groups]
 dev = [
-    "bandit>=1.8.3",
-    "black>=25.1.0",
+    "bandit>=1.8.6",
+    "black>=25.9.0",
     "codespell>=2.4.1",
-    "isort>=5.13.2",
-    "mypy>=1.15.0",
-    "pre-commit>=4.1.0",
-    "ruff>=0.9.6",
+    "isort>=7.0.0",
+    "mypy>=1.18.2",
+    "pre-commit>=4.3.0",
+    "ruff>=0.14.1",
 ]
 test = [
-    "coverage>=7.6.12",
-    "pytest>=8.3.4",
-    "pytest-asyncio>=0.25.3",
-    "pytest-cov>=6.0.0",
-    "pytest-mock>=3.14.0",
+    "coverage>=7.11.0",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "pytest-cov>=7.0.0",
+    "pytest-mock>=3.15.1",
 ]
 
 [project.urls]
 Homepage = "https://github.com/jpcadena/aws-microservices"
 Documentation = "https://github.com/jpcadena/aws-microservices"
 Repository = "https://github.com/jpcadena/aws-microservices"
+
+[tool.uv]
+default-groups = ["dev", "test"]
+
+[tool.codespell]
+skip = './.venv,./venv,./.ruff_cache,./.mypy_cache,./.pytest_cache,./openapi.json'
+count = true
+quiet-level = 3
 
 [tool.mypy]
 exclude = '''
