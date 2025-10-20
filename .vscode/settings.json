@@ -61,11 +61,9 @@
     "."
   ],
   "python.testing.pytestEnabled": true,
+  "ruff.configuration": "--config=pyproject.toml",
   "ruff.interpreter": [
     "${workspaceFolder}/.venv/Scripts/python.exe"
-  ],
-  "ruff.lint.args": [
-    "--config=pyproject.toml"
   ],
   "ruff.path": [
     "${workspaceFolder}/.venv/Scripts/ruff.exe"
