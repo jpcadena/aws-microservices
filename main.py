@@ -5,10 +5,10 @@ Main script for aws-microservices project
 
 def main() -> None:
 	"""
-	Main method
+	Main function for aws-microservices project
 
-	:return: None
-	:rtype: NoneType
+	Returns:
+		NoneType: None
 	"""
 	print("Hello from aws-microservices!")
 
