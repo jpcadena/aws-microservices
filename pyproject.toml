@@ -9,7 +9,7 @@ authors = [
 maintainers = [
     { name = "Juan Pablo Cadena Aguilar", email = "jpcadena@espol.edu.ec" },
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "awscli>=1.42.64",
     "boto3>=1.40.64",
@@ -20,7 +20,7 @@ dependencies = [
     "pydantic-extra-types>=2.10.6",
     "pydantic-settings>=2.11.0",
     "python-dotenv>=1.2.1",
-    "starlette>=0.49.2",
+    "starlette>=0.49.3",
     "uvicorn>=0.38.0",
 ]
 
@@ -67,7 +67,7 @@ exclude = '''
 )
 '''
 follow_imports = "silent"
-python_version = "3.13"
+python_version = "3.14"
 disallow_any_generics = true
 disallow_subclassing_any = true
 disallow_untyped_calls = true
@@ -114,7 +114,7 @@ tests = ["B301"]
 skips = ["B101", "B601", "B201"]
 
 [tool.ruff]
-target-version = "py313"
+target-version = "py314"
 exclude = [
     ".bzr",
     ".direnv",
